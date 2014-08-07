@@ -1,0 +1,25 @@
+a:link {color: #003366;
+font-family: verdana;
+font-size: 8pt;
+FONT-WEIGHT: bold;
+text-decoration: none}
+a:visited {color: #003366;
+font-family: verdana;
+font-size: 8pt;
+FONT-WEIGHT: bold;
+text-decoration: none}
+a:hover{color: ff6600;
+font-family: verdana;
+font-size: 8pt;
+text-decoration: none;
+}
+H1.error {	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ff6600; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+H1 {	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #003366; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+H2 {	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #006699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+H3 {	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+H3.error {	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #F8AB06; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+H4 {	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #808080; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+body {
+margin: 10px
+}
+p { font-family: Verdana, Tahoma, Arial; color: #000000; font-weight: normal; font-size: 8pt }

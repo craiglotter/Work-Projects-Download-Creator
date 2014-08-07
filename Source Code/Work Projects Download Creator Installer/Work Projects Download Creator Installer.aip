@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="ProductCode" Value="{0E4946D1-8EA7-476E-8EBB-5771208D49B2}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="CodeUnit"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1FF26150-0B29-405B-B3C5-C14B20AC1719}"/>
+    <ROW Property="ProductName" Value="Work Projects Download Creator"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="Inputs_DIR" Directory_Parent="TARGETDIR" DefaultDir="Inputs"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="Sounds_DIR" Directory_Parent="TARGETDIR" DefaultDir="Sounds"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Application_Loader.exe" ComponentId="{91F34AB2-5D83-4520-B249-5214DCAE8861}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe" FullKeyPath="TARGETDIR\Application_Loader.exe"/>
+    <ROW Component="AutoUpdate.exe" ComponentId="{46800C28-EBB0-4BC5-B1D4-DCBB32385028}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe" FullKeyPath="TARGETDIR\AutoUpdate.exe"/>
+    <ROW Component="Work_Projects_Download_Creator.exe" ComponentId="{A6A1DD59-C6C4-47E4-B481-FFCA4C476027}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Work_Projects_Download_Creator.exe" FullKeyPath="TARGETDIR\Work Projects Download Creator.exe"/>
+    <ROW Component="CodeUnit_Banner_200x49.jpg" ComponentId="{D6F5E946-46A1-445E-9FB0-029DB84A9B81}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="CodeUnit_Banner_200x49.jpg" FullKeyPath="TARGETDIR"/>
+    <ROW Component="HEEY.WAV" ComponentId="{CBC87AF5-53CE-497D-A7AD-C44F375F1204}" Directory_="Sounds_DIR" Attributes="0" Condition="" KeyPath="HEEY.WAV" FullKeyPath="TARGETDIR\Sounds"/>
+    <ROW Component="Inputs.txt" ComponentId="{19C595E7-CEB2-4F54-9002-43DD1C3D6AB0}" Directory_="Inputs_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt" FullKeyPath="TARGETDIR\Inputs"/>
+    <ROW Component="za.exe" ComponentId="{E7169714-53C5-4D8C-9F3E-36D439609B3D}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="za.exe" FullKeyPath="TARGETDIR\7za.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="Application_Loader.exe AutoUpdate.exe CodeUnit_Banner_200x49.jpg Inputs.txt HEEY.WAV Work_Projects_Download_Creator.exe za.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AutoUpdate.exe" Component_="AutoUpdate.exe" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg" Component_="Inputs.txt" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="UHOH.WAV" Component_="HEEY.WAV" FileName="UHOH.WAV" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Sounds\UHOH.WAV" SelfReg="false"/>
+    <ROW File="VICTORY.WAV" Component_="HEEY.WAV" FileName="VICTORY.WAV" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Sounds\VICTORY.WAV" SelfReg="false"/>
+    <ROW File="CodeUnit_Banner_200x49.jpg" Component_="CodeUnit_Banner_200x49.jpg" FileName="CodeUn~1.jpg|CodeUnit_Banner_200x49.jpg" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\CodeUnit_Banner_200x49.jpg" SelfReg="false"/>
+    <ROW File="Inputs.txt" Component_="Inputs.txt" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="Application_Loader.exe" Component_="Application_Loader.exe" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Description.txt" Component_="CodeUnit_Banner_200x49.jpg" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Description.txt" SelfReg="false"/>
+    <ROW File="Work_Projects_Download_Creator.exe" Component_="Work_Projects_Download_Creator.exe" FileName="WorkPr~1.exe|Work Projects Download Creator.exe" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Work Projects Download Creator.exe" SelfReg="false"/>
+    <ROW File="Work_Projects_Download_Creator.exe.config" Component_="CodeUnit_Banner_200x49.jpg" FileName="WorkPr~1.con|Work Projects Download Creator.exe.config" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Work Projects Download Creator.exe.config" SelfReg="false"/>
+    <ROW File="config.aup" Component_="CodeUnit_Banner_200x49.jpg" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\config.aup" SelfReg="false"/>
+    <ROW File="HEEY.WAV" Component_="HEEY.WAV" FileName="HEEY.WAV" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\Sounds\HEEY.WAV" SelfReg="false"/>
+    <ROW File="za.exe" Component_="za.exe" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\Work Projects Download Creator\Required Files\7za.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="AI_ViewReadme" Type="194" Source="viewer.exe" Target="[#Description.txt]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="AI_LaunchApp" Type="194" Source="viewer.exe" Target="[#Application_Loader.exe]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Work_Projects_Download_Creator" Directory_="SHORTCUTDIR" Name="WorkPr~1|Work Projects Download Creator" Component_="Application_Loader.exe" Target="[TARGETDIR]Application_Loader.exe" Arguments="" Description="" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="Work_Projects_Download_Creator_AutoUpdate" Directory_="SHORTCUTDIR" Name="WorkPr~2|Work Projects Download Creator AutoUpdate" Component_="Application_Loader.exe" Target="[TARGETDIR]AutoUpdate.exe" Arguments="force" Description="AutoUpdate" Hotkey="0" Icon_="TARGETDIR_AutoUpdate.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="Work_Projects_Download_Creator_Uninstall" Directory_="SHORTCUTDIR" Name="WorkPr~3|Work Projects Download Creator Uninstall" Component_="Application_Loader.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="TARGETDIR_AutoUpdate.exe" SourcePath="Images\AutoUpdate.ico" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;viewer.exe&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="10"/>
+    <ATTRIBUTE name="PackageName" value="Release\Work Projects Download Creator Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
